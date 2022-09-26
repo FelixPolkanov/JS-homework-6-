@@ -1,6 +1,20 @@
 const category = document.querySelector("#categories");
-const numberCategories = Category.querySelectorAll("li.item");
-console.log("Number of categories:", numberCategories.length);
+const numberOfCategories = category.querySelectorAll("li.item");
+console.log("Number of categories:", numberOfCategories.length);
 
-const ElementHeadingOfCategories = NumberCategories('h2');
-console.log(ElementHeadingOfCategories);
+
+numberOfCategories.forEach(function (numberCategory) {
+    const elementHeadingOfCategory = numberCategory.querySelector('h2');
+    console.log("Category:", elementHeadingOfCategory.textContent);
+    const elementsInCategorySum = numberCategory.querySelectorAll('li');
+    console.log("Elements:", elementsInCategorySum.length);
+}
+)
+
+
+
+
+
+
+
+
