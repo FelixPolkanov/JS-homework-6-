@@ -11,7 +11,7 @@ const handleClickOnIncrementBtn = () => {
 };
 
 const incrementBtn = document.querySelector('button[data-action="increment"]');
-incrementBtn.addEventListener('click', (handleClickOnIncrementBtn));
+incrementBtn.addEventListener('click', handleClickOnIncrementBtn);
 
 
 
