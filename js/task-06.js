@@ -15,7 +15,7 @@ inputRefValidation.addEventListener("blur", (event) => {
   console.log("entered symbol amount:", inputDataLength);
   console.log("required symbol amount:", dataLengthRef.dataset.length)
     
-   if (inputDataLength == dataLengthRef.dataset.length) {
+   if (inputDataLength === Number(dataLengthRef.dataset.length)) {
        inputRef.classList.remove('invalid');
        inputRef.classList.add('valid'); 
        console.log('valid');
